@@ -1,0 +1,160 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00796B;
+  padding: 10px 20px;
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content Layout */
+.main-content {
+  display: flex;
+  height: calc(100vh - 70px);  /* Adjust to the height of the navbar */
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 10px;
+}
+
+.sidebar .chat, .sidebar .new-chat-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #00796B;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar .new-chat-btn {
+  background-color: #0288D1;
+}
+
+.sidebar .chat:hover, .sidebar .new-chat-btn:hover {
+  background-color: #004D40;
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+  border-left: 1px solid #ddd;
+}
+
+.chat-header {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.chat-header svg {
+  margin-right: 10px;
+}
+
+.chat-body {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.chat-input {
+  display: flex;
+  margin-top: 20px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  background-color: #00796B;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #004D40;
+}
+
+/* Quick Actions Styling */
+.quick-actions {
+  display: flex;
+  justify-content: space-between;  /* Ensure the boxes spread out in a single line */
+  margin-top: 20px;
+}
+
+.quick-action-box {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  width: 20%;  /* Reduced width to fit smaller boxes */
+  margin: 0 5px;  /* Add 5px margin to create 10px spacing between boxes */
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quick-action-box:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.05);
+}
+
+.quick-action-icon {
+  font-size: 30px;  /* Reduced icon size */
+  margin-bottom: 5px;  /* Adjusted margin for icon */
+}
+
+.quick-action-box h3 {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.quick-action-box p {
+  font-size: 12px;
+  color: #666;
+}
